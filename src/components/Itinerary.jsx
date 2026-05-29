@@ -3,8 +3,9 @@ import { spotifyPlaylistUrl } from '../data/spotify'
 
 function toSpotifyEmbedUrl(url) {
   if (!url) return null
-  // Convert open.spotify.com/playlist/ID → open.spotify.com/embed/playlist/ID
-  return url.replace('open.spotify.com/', 'open.spotify.com/embed/')
+  // Strip any tracking params, then convert to embed URL
+  const clean = url.split('?')[0]
+  return clean.replace('open.spotify.com/', 'open.spotify.com/embed/') + '?utm_source=generator'
 }
 
 export default function Itinerary({ onNavigate }) {
@@ -49,7 +50,7 @@ export default function Itinerary({ onNavigate }) {
           <iframe
             src={`${embedUrl}?utm_source=generator&theme=0`}
             width="100%"
-            height="152"
+            height="352"
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
