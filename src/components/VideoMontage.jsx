@@ -21,7 +21,7 @@ export default function VideoMontage({ onBack }) {
       <button className="back-btn" onClick={onBack}>← Back to Itinerary</button>
 
       <div className="section-header" style={{ marginTop: '36px' }}>
-        <h1>🎬 A Message From the Family</h1>
+        <h1>🎬 Movie Time!</h1>
         <p>A special video made with love, just for Mom</p>
       </div>
 
