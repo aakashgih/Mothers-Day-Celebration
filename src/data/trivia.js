@@ -1,6 +1,5 @@
-// Each family has a name and their own set of questions.
-// Replace "Family A / B / C" with the real family names.
-// correct: index into options[] (0-based)
+// Open-ended questions — no answer options, just prompts shown on screen.
+// Replace family names and questions with the real ones when ready.
 
 export const families = [
   {
@@ -8,21 +7,11 @@ export const families = [
     name: 'Family A',
     emoji: '🌸',
     questions: [
-      {
-        question: "What is Mom's favorite flower?",
-        options: ['Rose', 'Lily', 'Tulip', 'Daisy'],
-        correct: 0,
-      },
-      {
-        question: "What is Mom's go-to comfort food?",
-        options: ['Pasta', 'Tacos', 'Soup', 'Pizza'],
-        correct: 2,
-      },
-      {
-        question: "What was Mom's dream job growing up?",
-        options: ['Teacher', 'Doctor', 'Artist', 'Astronaut'],
-        correct: 1,
-      },
+      "What is Mom's favorite childhood memory?",
+      "If Mom could travel anywhere in the world, where would she go?",
+      "What is one thing Mom has always wanted to learn or try?",
+      "What is Mom's proudest moment as a parent?",
+      "How would Mom describe her perfect day?",
     ],
   },
   {
@@ -30,21 +19,11 @@ export const families = [
     name: 'Family B',
     emoji: '🌷',
     questions: [
-      {
-        question: "What is Mom's favorite season?",
-        options: ['Spring', 'Summer', 'Fall', 'Winter'],
-        correct: 0,
-      },
-      {
-        question: "What does Mom love to do on her day off?",
-        options: ['Read', 'Garden', 'Cook', 'Watch TV'],
-        correct: 1,
-      },
-      {
-        question: "What is Mom's favorite holiday?",
-        options: ["Christmas", "Thanksgiving", "Easter", "Fourth of July"],
-        correct: 0,
-      },
+      "What is something Mom always says that sticks with you?",
+      "What is Mom's favorite meal or food?",
+      "What superpower do you think Mom secretly has?",
+      "What is the funniest memory you have with Mom?",
+      "In three words, how would you describe Mom?",
     ],
   },
   {
@@ -52,21 +31,11 @@ export const families = [
     name: 'Family C',
     emoji: '🌹',
     questions: [
-      {
-        question: "What is Mom's favorite movie?",
-        options: ['The Sound of Music', 'Titanic', 'Forrest Gump', 'Pretty Woman'],
-        correct: 2,
-      },
-      {
-        question: "Where would Mom most like to travel?",
-        options: ['Italy', 'Hawaii', 'Paris', 'Japan'],
-        correct: 2,
-      },
-      {
-        question: "What is Mom's hidden talent?",
-        options: ['Singing', 'Painting', 'Dancing', 'Cooking'],
-        correct: 3,
-      },
+      "What is the best piece of advice Mom has ever given you?",
+      "What did Mom sacrifice for the family that you're most grateful for?",
+      "What is something you learned from Mom that you'll never forget?",
+      "What makes Mom laugh the hardest?",
+      "If you could give Mom any gift in the world, what would it be?",
     ],
   },
 ]

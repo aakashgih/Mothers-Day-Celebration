@@ -365,7 +365,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   width: 100%;
 }
@@ -422,87 +422,15 @@ body {
 
 .trivia__q {
   font-family: 'Playfair Display', serif;
-  font-size: var(--font-xl);
+  font-size: var(--font-2xl);
   color: var(--text);
   text-align: center;
-  margin-bottom: 48px;
-  line-height: 1.3;
-}
-
-.trivia__options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.option-btn {
-  padding: 22px 28px;
-  border-radius: var(--radius-md);
-  border: 2.5px solid var(--primary-light);
+  line-height: 1.35;
+  padding: 48px 32px;
   background: var(--card-bg);
-  color: var(--text);
-  font-family: 'Nunito', sans-serif;
-  font-size: var(--font-md);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, transform 0.15s;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.option-btn:hover:not(:disabled) {
-  background: var(--primary);
-  color: white;
-  border-color: var(--primary);
-  transform: scale(1.02);
-}
-
-.option-btn:disabled {
-  cursor: default;
-}
-
-.option-btn--correct {
-  background: #E8F5E9;
-  border-color: #43A047;
-  color: #1B5E20;
-}
-
-.option-btn--wrong {
-  background: #FFEBEE;
-  border-color: #E53935;
-  color: #B71C1C;
-}
-
-.option-letter {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--primary-light);
-  color: var(--primary-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: var(--font-sm);
-  flex-shrink: 0;
-  transition: background 0.2s, color 0.2s;
-}
-
-.option-btn--correct .option-letter {
-  background: #43A047;
-  color: white;
-}
-
-.option-btn--wrong .option-letter {
-  background: #E53935;
-  color: white;
-}
-
-.option-btn:hover:not(:disabled) .option-letter {
-  background: rgba(255,255,255,0.3);
-  color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  animation: popIn 0.35s ease both;
 }
 
 /* Results */
