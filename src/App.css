@@ -116,9 +116,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 40px 72px;
   animation: fadeIn 0.6s ease both;
 }
 
@@ -282,6 +281,36 @@ body {
   display: block;
 }
 
+.timeline-event--clickable {
+  cursor: pointer;
+}
+
+.timeline-event--clickable .timeline-body {
+  border: 2px solid var(--primary-light);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.timeline-event--clickable:hover .timeline-body {
+  transform: translateX(6px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--primary);
+}
+
+.timeline-cta {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--accent-light);
+  padding: 8px 18px;
+  border-radius: 50px;
+}
+
+.timeline-text {
+  flex: 1;
+}
+
 .timeline-body {
   background: var(--card-bg);
   border-radius: var(--radius-md);
@@ -291,6 +320,17 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  border: 2px solid transparent;
+}
+
+/* Family cards row */
+.family-cards {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .timeline-icon {
