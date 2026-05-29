@@ -4,7 +4,7 @@
 export const families = [
   {
     id: 'family-a',
-    name: 'Family A',
+    name: 'Amit',
     emoji: '🌸',
     questions: [
       "What is Mom's favorite childhood memory?",
@@ -16,7 +16,7 @@ export const families = [
   },
   {
     id: 'family-b',
-    name: 'Family B',
+    name: 'Aakash',
     emoji: '🌷',
     questions: [
       "What is something Mom always says that sticks with you?",
@@ -28,7 +28,7 @@ export const families = [
   },
   {
     id: 'family-c',
-    name: 'Family C',
+    name: 'Johnson',
     emoji: '🌹',
     questions: [
       "What is the best piece of advice Mom has ever given you?",

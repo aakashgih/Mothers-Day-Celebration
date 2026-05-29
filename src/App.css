@@ -164,7 +164,7 @@ body {
   border-radius: var(--radius-lg);
   box-shadow: var(--card-shadow);
   padding: 48px 40px 44px;
-  width: 320px;
+  width: 100%;
   cursor: pointer;
   border: 2px solid transparent;
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
@@ -323,14 +323,13 @@ body {
   border: 2px solid transparent;
 }
 
-/* Family cards row */
+/* Family cards row — always 3 columns */
 .family-cards {
-  display: flex;
-  gap: 36px;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .timeline-icon {
