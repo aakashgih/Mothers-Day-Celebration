@@ -1,5 +1,4 @@
 // Open-ended questions — no answer options, just prompts shown on screen.
-// Replace family names and questions with the real ones when ready.
 
 export const families = [
   {
@@ -7,11 +6,11 @@ export const families = [
     name: 'Amit',
     emoji: '🌸',
     questions: [
-      "What is Mom's favorite childhood memory?",
-      "If Mom could travel anywhere in the world, where would she go?",
-      "What is one thing Mom has always wanted to learn or try?",
-      "What is Mom's proudest moment as a parent?",
-      "How would Mom describe her perfect day?",
+      "If Mommy could spend a whole day with just you, where would she want to go?",
+      "What is Mommy's favorite thing to do on the weekend?",
+      "What is Mommy's favorite vacation we've taken?",
+      "What is Mommy's favorite ice cream flavor?",
+      "What is Mommy most proud of about you?",
     ],
   },
   {
@@ -19,11 +18,11 @@ export const families = [
     name: 'Aakash',
     emoji: '🌷',
     questions: [
-      "What is something Mom always says that sticks with you?",
-      "What is Mom's favorite meal or food?",
-      "What superpower do you think Mom secretly has?",
-      "What is the funniest memory you have with Mom?",
-      "In three words, how would you describe Mom?",
+      "What is your favorite snack?",
+      "What is your favorite animal?",
+      "What is your favorite color?",
+      "What is your favorite song?",
+      "What is your favorite thing to do with Mommy?",
     ],
   },
   {
@@ -31,11 +30,11 @@ export const families = [
     name: 'Johnson',
     emoji: '🌹',
     questions: [
-      "What is the best piece of advice Mom has ever given you?",
-      "What did Mom sacrifice for the family that you're most grateful for?",
-      "What is something you learned from Mom that you'll never forget?",
-      "What makes Mom laugh the hardest?",
-      "If you could give Mom any gift in the world, what would it be?",
+      "What is Mommy's favorite coffee drink?",
+      "What is Mommy's favorite thing to do on the weekend?",
+      "What is Mommy's favorite TV show?",
+      "What does Mommy think you're really good at?",
+      "What is Mommy's favorite family memory?",
     ],
   },
 ]
