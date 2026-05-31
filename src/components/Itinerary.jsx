@@ -1,15 +1,6 @@
 import { events } from '../data/itinerary'
-import { spotifyPlaylistUrl } from '../data/spotify'
-
-function toSpotifyEmbedUrl(url) {
-  if (!url) return null
-  // Strip any tracking params, then convert to embed URL
-  const clean = url.split('?')[0]
-  return clean.replace('open.spotify.com/', 'open.spotify.com/embed/') + '?utm_source=generator'
-}
 
 export default function Itinerary({ onNavigate }) {
-  const embedUrl = toSpotifyEmbedUrl(spotifyPlaylistUrl)
 
   return (
     <main className="home fade-in">
@@ -45,19 +36,6 @@ export default function Itinerary({ onNavigate }) {
         ))}
       </div>
 
-      {embedUrl && (
-        <div className="spotify-player">
-          <iframe
-            src={`${embedUrl}?utm_source=generator&theme=0`}
-            width="100%"
-            height="352"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            title="Celebration Playlist"
-          />
-        </div>
-      )}
     </main>
   )
 }
